@@ -1,0 +1,41 @@
+.containerImg{
+    max-width: 8.25rem;
+    min-height: 8.25rem;
+    max-height: 8.25rem;
+    min-width:  8.25rem;
+    border-radius: 20px;
+    z-index: 8;
+    
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+  
+  
+  .animate {
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 0.50rem;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      var(--rotate)
+      ,#020617, #4338ca, #818cf8);
+      animation: spin 2.5s linear infinite;
+  }
+
+
+
+
+
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }

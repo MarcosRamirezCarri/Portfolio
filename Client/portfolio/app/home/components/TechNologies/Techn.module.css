@@ -1,0 +1,6 @@
+.contAnimation{
+
+
+animation:blur-in 0.3s linear both
+}
+@keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}

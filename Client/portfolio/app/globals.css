@@ -1,0 +1,151 @@
+@tailwind base;
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #4f46e5;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4338ca;
+  border-radius: 14px;
+  border: 3px solid #4338ca;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+     /* transition: all; */
+     background-color: #a5b4fc !important;
+     /* padding: 0.8rem; */
+     /* transition: width 5s ease-in .2s; */
+     overflow: hidden;
+     height: 100vh;
+  background:
+    rgb(var(--background-start-rgb));
+}
+
+.fade-enter{
+  opacity: 0;
+  transform: translateX(-100%);
+
+}
+.fade-exit{
+  opacity: 1;
+  transform: translateX(0%);
+
+}
+.fade-enter-active{
+  opacity: 1;
+  transform: translateX(0%);
+
+}
+.fade-exit-active{
+  opacity: 0;
+  transform: translateX(100%);
+
+}
+.fade-enter-active,
+.fade-exit-active{
+  transition: opacity 300ms, transform 300ms;
+
+}
+
+
+.fade2-enter{
+  opacity: 0;
+  z-index: 2;
+
+}
+.fade2-exit{
+  opacity: 1;
+  z-index: 2;
+
+}
+.fade2-enter-active{
+  opacity: 1;
+  z-index: 2;
+
+}
+.fade2-exit-active{
+  opacity: 0;
+  z-index: 2;
+}
+.fade2-enter-active,
+.fade2-exit-active{
+  transition: opacity 200ms;
+  z-index: 2;
+}
+
+.Trans-enter{
+  opacity: 0;
+  z-index: 2;
+  transform: translateY(-100%);
+
+}
+.Trans-exit{
+  opacity: 1;
+  z-index: 2;
+  transform: translateY(0%);
+
+}
+.Trans-enter-active{
+  opacity: 1;
+  z-index: 2;
+  transform: translateY(0%);
+
+}
+.Trans-exit-active{
+  opacity: 0;
+  z-index: 2;
+  transform: translateY(100%);
+}
+.Trans-enter-active,
+.Trans-exit-active{
+  transition: opacity 400ms, transform 400ms;
+  z-index: 2;
+}
+
+.fade3-enter{
+  opacity: 0.2;
+  z-index: 2;
+
+}
+.fade3-exit{
+  opacity: 1;
+  z-index: 2;
+
+}
+.fade3-enter-active{
+  opacity: 1;
+  z-index: 2;
+
+}
+.fade3-exit-active{
+  opacity: 0.2;
+  z-index: 2;
+}
+.fade3-enter-active,
+.fade3-exit-active{
+  transition: opacity 100ms;
+  z-index: 2;
+}
