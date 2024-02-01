@@ -35,7 +35,7 @@ export default function ProjectsSelect () {
 }
 </div>
 {projectSelect ? projectSelect.map((a, index) => (
-     <SwitchTransition>
+     <SwitchTransition key={index}>
      <CSSTransition
      classNames='fade3'
      addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
