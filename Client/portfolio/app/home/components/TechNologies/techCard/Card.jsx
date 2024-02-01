@@ -7,7 +7,7 @@ export default function Cardtech ({name, image, type}) {
         <div className={style.animate}>
 <div className="p-4 bg-slate-200 rounded-md gap-3 z-5 select-none flex flex-col justify-left shadow-xl shadow-indigo-500 hover:shadow-2xl hover:shadow-indigo-800">
 <Title >{name}</Title>
-<Image width={200} height={200} className={style.containerImg} src={image} alt="tech"/>
+<Image width={200} height={200} className={style.containerImg} src={image} alt="tech" />
 <Text >{type}</Text>
 </div>
         </div>

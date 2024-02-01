@@ -43,13 +43,13 @@ export default function Home() {
         className={`absolute invisible lg:visible h-fit w-fit origin-center right-0 transition-all ${expanded ? 'hidden' : 'content'} `} >
         <Image width={420} height={420} 
         src={yoSinFondo}
-        className=' h-80 w-80 rounded-full transition-all duration-300 scale-90 blur-[0.5px] grayscale hover:grayscale-0 hover:scale-100 hover:blur-none'/>
+        className=' h-80 w-80 rounded-full transition-all duration-300 scale-90 blur-[0.5px] grayscale hover:grayscale-0 hover:scale-100 hover:blur-none' alt="IconMe"/>
         </div>
         
         
         <Image width={420} height={420} 
         src={IconoMio}  
-        className={`absolute h-48 w-48 visible top-[30vh] lg:invisible  ${expanded ? 'hidden' : 'content'} `}/>
+        className={`absolute h-48 w-48 visible top-[30vh] lg:invisible  ${expanded ? 'hidden' : 'content'} `} alt="IconMe"/>
       {expanded ? (
         <div>
          <svg aria-hidden="true" className="w-24 h-24 text-blue-200 animate-spin fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">

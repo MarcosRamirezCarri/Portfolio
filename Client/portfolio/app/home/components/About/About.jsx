@@ -31,7 +31,7 @@ export default function About1 () {
                  <div className="place-content-center p-5">
      
   
-  <Image width={400} height={400} className="ring-2 h-72 w-72 lg:w-auto lg:h-auto rounded-xl bg-transparent"  src={ImgAleatorio} alt="no image"/>
+  <Image width={400} height={400} className="ring-2 h-72 w-72 lg:w-auto lg:h-auto rounded-xl bg-transparent"  src={ImgAleatorio} alt="no image" />
   
                     </div>
             </div>

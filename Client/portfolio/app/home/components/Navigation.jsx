@@ -61,13 +61,13 @@ export default function Navigation ({handleChange, state, setState}) {
     <button onClick={handleChange} value='Tech' className={`z-2 text-center lg:w-max relative mt-2 text-lg lg:text-2xl drop-shadow-md [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal  hover:-translate-y-1.5 hover:scale-110 ease-in-out duration-300 ${state === 'Tech' ? 'text-blue-500' : 'text-[#1f2937]'}`}>Tecnologías</button>
     </div>
     <div className='absolute flex flex-row gap-3 lg:gap-4 left-2 bottom-24 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300 content-center'>
-      <a href='https://calendly.com/marcos_ramirez123' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10' src={calendly} alt="yo"/> </a>
+      <a href='https://calendly.com/marcos_ramirez123' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10' src={calendly} alt="LinkTo" /> </a>
       <a href='https://calendly.com/marcos_ramirez123' target='_blank'><p className='text-xs lg:text-lg relative text-end self-center top-2 text-[#1f2937] [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal'>Agenda una Cita</p></a>
     </div>
     <div className='absolute flex flex-row gap-3 lg:gap-4 left-2 bottom-12'>
-    <a href='https://www.linkedin.com/in/marcos-nicolas-ramirez-carrivali-b8bb77253/' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300' src={Linkedin} alt="yo"/></a>
-    <a href='https://github.com/MarcosRamirezCarri' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300' src={github} alt="yo"/></a>
-    <a href='https://www.instagram.com/marcos_rc49/' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300' src={instragram} alt="yo"/></a>
+    <a href='https://www.linkedin.com/in/marcos-nicolas-ramirez-carrivali-b8bb77253/' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300' src={Linkedin} alt="LinkTo"/></a>
+    <a href='https://github.com/MarcosRamirezCarri' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300' src={github} alt="LinkTo"/></a>
+    <a href='https://www.instagram.com/marcos_rc49/' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300' src={instragram} alt="LinkTo"/></a>
     </div>
 </div>
     </div>

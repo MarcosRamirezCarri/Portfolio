@@ -95,7 +95,7 @@ useEffect(() => {
               <div className={styleModal.flipX}>
               <div className={styleModal.animate}>
               <a href={link} target="_blank">
-                <Image width={280} height={200} src={icon} className="h-10 w-10 z-80 lg:h-20 lg:w-20 rounded-full bg-blue-50 ring-2" alt="iconProyect"/>
+                <Image width={280} height={200} src={icon} className="h-10 w-10 z-80 lg:h-20 lg:w-20 rounded-full bg-blue-50 ring-2" alt="iconProyect" />
                 </a>
                 </div>        
               </div>
@@ -117,7 +117,7 @@ useEffect(() => {
              <span className={styleModal.close} onClick={closeModal}>x</span>
              <TransformWrapper defaultScale={1} defaultPositionX={200} defaultPositionY={200}>
                <TransformComponent>
-                 <Image id="modalImage" src={modalImageUrl} as="image" className={styleModal.modalImage} alt='phProyect' width={isMobile ? 600 : 1150} height={isMobile ? 190 : 550} />
+                 <Image id="modalImage" src={modalImageUrl} as="image" className={styleModal.modalImage} alt='phProyect' width={isMobile ? 600 : 1150} height={isMobile ? 190 : 550}  />
                </TransformComponent>
              </TransformWrapper>
            </div>
