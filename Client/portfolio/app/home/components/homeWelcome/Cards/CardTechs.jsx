@@ -11,6 +11,7 @@ export default function HomeCardTechs ({currentPage, setState}) {
   const objetos = [...techs]
 
   const [objetoAleatorio, setObjetoAleatorio] = useState(objetos[0]);
+  console.log(objetoAleatorio)
  
 
  

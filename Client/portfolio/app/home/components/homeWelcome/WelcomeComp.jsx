@@ -32,7 +32,7 @@ export default function WelcomeHome ({setState}) {
     
 
 return(
-    <div className="w-[95vw] lg:w-[75vw] h-[90vh] relative lg:left-[12vw] m-5 justify-center top-10 lg:top-5 lg:gap-7 flex flex-row lg:grid lg:grid-cols-3">
+    <div className="w-[95vw] lg:w-[75vw] h-[90vh] relative lg:left-[12vw] m-5 justify-center top-10 lg:top-8 lg:gap-7 flex flex-row lg:grid lg:grid-cols-3">
  <button className="relative max-h-[10vh] top-80 right-0 lg:hidden"
           onClick={() => prevPage()}>
      

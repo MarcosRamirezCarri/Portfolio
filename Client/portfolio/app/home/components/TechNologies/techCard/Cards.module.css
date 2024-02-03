@@ -24,8 +24,11 @@
     background-image: linear-gradient(
       var(--rotate)
       ,#020617, #4338ca, #818cf8);
-      animation: spin 2.5s linear infinite;
-  }
+      animation: spin 2.5s linear infinite,
+      blur-in 0.4s linear both} 
+
+@keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+  
 
 
 

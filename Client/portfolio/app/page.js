@@ -63,13 +63,13 @@ export default function Home() {
           <h2  className="text-2xl lg:text-4xl text-slate-800 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal">Bienvenido a mi</h2>
           <h2  className="text-2xl lg:text-4xl text-blue-600 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] lg:decoration-2 font-normal"> Portfolio</h2>
           </div>
-          <div className="gap-2 relative left-3 lg:left-0  flex flex-col lg:flex-row mt-8 lg:mt-20">
-          <h2  className="text-xl lg:text-3xl text-slate-800 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal">Soy</h2>
-          <h2  className="text-xl lg:text-3xl text-blue-600 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] underline underline-offset-1 decoration-1 lg:decoration-2 font-normal">Marcos Ramirez </h2>
+          <div className="gap-1 relative lg:left-0 text-center flex flex-row mt-12 lg:mt-20">
+          <h2  className="text-lg lg:text-3xl text-slate-800 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal">Soy</h2>
+          <h2  className="text-lg lg:text-3xl text-blue-600 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] underline underline-offset-1 decoration-1 lg:decoration-2 font-normal">Marcos Ramirez </h2>
           </div>
-          <div className="gap-1 left-3 lg:left-0 relative flex flex-row">
-          <h2  className="text-xl lg:text-3xl text-slate-800 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal">Y soy un desarrollador  </h2>
-          <h2  className="text-xl lg:text-3xl text-blue-600 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] underline underline-offset-1 decoration-1 font-normal"> Full Stack</h2>
+          <div className="gap-1 text-center lg:left-0  relative flex flex-row">
+          <h2  className="text-lg lg:text-3xl text-slate-800 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal">Y soy un desarrollador  </h2>
+          <h2  className="text-lg lg:text-3xl text-blue-600 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] underline underline-offset-1 decoration-1 font-normal"> Full Stack</h2>
           </div>
          
         
