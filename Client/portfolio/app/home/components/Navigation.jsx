@@ -22,9 +22,9 @@ export default function Navigation ({handleChange, state, setState}) {
       width="40"
       height="40"
     >
-      <rect width="100" height="10"></rect>
-      <rect y="30" width="100" height="10"></rect>
-      <rect y="60" width="100" height="10"></rect>
+      <rect width="70" height="10"></rect>
+      <rect y="30" width="70" height="10"></rect>
+      <rect y="60" width="70" height="10"></rect>
     </svg>
   ): null}
        <div className={`top-0 w-[50vw] lg:w-[25vw] left-0 lg:left-9 bg-transparent text-white fixed h-full p-2 ease-in-out duration-300 z-40  ${
@@ -54,7 +54,7 @@ export default function Navigation ({handleChange, state, setState}) {
     </button>
     <div onClick={() => setState('Welcome')}  className='flex flex-col'>
     <button  className={`z-2 w-full lg:w-max top-12 relative break-normal text-xl lg:text-3xl drop-shadow-lg [text-shadow:_4px_8px_12px_rgb(13_10_20_/_40%)] font-normal transition-colors text-blue-900 mb-2 hover:text-blue-500 ${state === 'Welcome' ? 'text-blue-500' : 'text-blue-900'}`} >Marcos Ramirez</button>
-    <p className='z-2 w-full lg:w-max top-8 relative text-md lg:text-lg [text-shadow:_4px_8px_12px_rgb(13_10_20_/_40%)] font-normal transition-colors text-blue-900 mb-2'>Desarrollador Full Stack</p>
+    <p className='z-2 w-full lg:w-max top-8 relative text-xs lg:text-lg [text-shadow:_4px_8px_12px_rgb(13_10_20_/_40%)] font-normal transition-colors text-center text-blue-900 mb-2'>Desarrollador Full Stack</p>
     </div> 
     <button onClick={handleChange} value='About' className={`z-2 text-center lg:w-max relative mt-20 text-lg lg:text-2xl drop-shadow-md [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal  hover:-translate-y-1.5 hover:scale-110 ease-in-out duration-300 ${state === 'About' ? 'text-blue-500' : 'text-[#1f2937]'}`}>Sobre Mí</button>
     <button onClick={handleChange} value='Projects' className={`z-2 text-center lg:w-max relative mt-2 text-lg lg:text-2xl drop-shadow-md [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal  hover:-translate-y-1.5 hover:scale-110 ease-in-out duration-300 ${state === 'Projects' ? 'text-blue-500' : 'text-[#1f2937]'}`}>Proyectos</button>
@@ -62,7 +62,7 @@ export default function Navigation ({handleChange, state, setState}) {
     </div>
     <div className='absolute flex flex-row gap-3 lg:gap-4 left-2 bottom-24 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300 content-center'>
       <a href='https://calendly.com/marcos_ramirez123' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10' src={calendly} alt="LinkTo" /> </a>
-      <a href='https://calendly.com/marcos_ramirez123' target='_blank'><p className='text-xs lg:text-lg relative text-end self-center top-2 text-[#1f2937] [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal'>Agenda una Cita</p></a>
+      <a href='https://calendly.com/marcos_ramirez123' target='_blank'><p className='text-[10px] lg:text-lg relative text-end self-center top-2 text-[#1f2937] [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal'>Agenda una Cita</p></a>
     </div>
     <div className='absolute flex flex-row gap-3 lg:gap-4 left-2 bottom-12'>
     <a href='https://www.linkedin.com/in/marcos-nicolas-ramirez-carrivali-b8bb77253/' target='_blank'><Image className='place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300' src={Linkedin} alt="LinkTo"/></a>

@@ -99,14 +99,14 @@ useEffect(() => {
                 </a>
                 </div>        
               </div>
-              <h1 className="place-self-center w-fit h-fit overflow-visible truncate text-lg lg:text-2xl font-bold [text-shadow:_1px_1px_1px_rgb(13_10_20_/_40%)]">¿Qué es {name}?</h1>  
+              <h1 className="place-self-center text-slate-950 w-fit h-fit overflow-visible truncate text-lg lg:text-2xl font-bold [text-shadow:_1px_1px_1px_rgb(13_10_20_/_40%)]">¿Qué es {name}?</h1>  
               </div>
               <div className="shadow-inner place-self-left p-2 bg-blue-300 mb-2 rounded-[10px]">
-              <p className="text-sm lg:text-md text-left font-sans font-normal">- {description}</p>
+              <p className="text-sm text-slate-900 lg:text-md text-left font-sans font-normal">- {description}</p>
 
               </div>
               <div className="shadow-inner p-2 bg-blue-300 rounded-[10px]">
-              <p className="text-sm lg:text-md text-left font-sans font-normal">- Implementaciones: {Implementations}</p>
+              <p className="text-sm lg:text-md text-slate-900 text-left font-sans font-normal">- Implementaciones: {Implementations}</p>
 
               </div>
                
