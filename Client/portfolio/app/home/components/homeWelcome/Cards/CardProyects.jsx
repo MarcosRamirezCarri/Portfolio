@@ -30,7 +30,7 @@ export default function HomeCardProyects ({currentPage, setState}) {
 return(
   <div className={`${ currentPage === 1 ? 'contents':'hidden' } lg:contents`}>
   
-    <div className="p-5 select-none rounded-[10px] relative w-[65vw] lg:w-[20vw] h-[80vh] flex flex-col text-center bg-blue-200 shadow-lg shadow-blue-700 top-[1.50rem] hover:scale-105 hover:shadow-xl hover:shadow-blue-700 duration-150 cursor-pointer " 
+    <div className="p-5 select-none rounded-[10px] relative w-[65vw] lg:w-[20vw] h-[80vh] flex flex-col text-center bg-blue-200 shadow-lg shadow-blue-700 top-[1.50rem] hover:scale-105 hover:shadow-xl hover:shadow-blue-700 duration-150 cursor-pointer animate-blur " 
     onClick={() =>{setState('Projects')}}
     >
     <p className="font-sans text-slate-900 font-medium text-xl">Mis proyectos?</p>

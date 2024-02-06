@@ -1,6 +1,5 @@
 import Image from "next/image";
 import meImage from '../../../../../DatosPortfolio/images/yo/bowler.png'
-import { useRef } from "react";
 import	'./animations/style.css'
 import React from "react";
 
@@ -8,7 +7,7 @@ export default function HomeCardMe ({currentPage, setState}) {
   
 return(
   <div className={`${ currentPage === 2 ? 'contents':'hidden' } lg:contents`}>
-            <div className="p-5 select-none rounded-[10px] relative w-[65vw] lg:w-[20vw] h-[80vh] flex flex-col text-center bg-blue-200 shadow-lg shadow-blue-700 top-[1.50rem] hover:scale-105 hover:shadow-xl hover:shadow-blue-700 duration-150 cursor-pointer "
+            <div className="p-5 select-none rounded-[10px] relative w-[65vw] lg:w-[20vw] h-[80vh] flex flex-col text-center bg-blue-200 shadow-lg shadow-blue-700 top-[1.50rem] hover:scale-105 hover:shadow-xl hover:shadow-blue-700 duration-150 cursor-pointer animate-blur "
             onClick={() =>{setState('About')}}
             >
             <p className="font-sans text-slate-900 font-medium text-xl">Sobre mi?</p>

@@ -44,6 +44,7 @@ module.exports = {
     },
     transparent: "transparent",
     current: "currentColor",
+    
     extend: {
       colors: {
         transparent: 'transparent',
@@ -82,6 +83,15 @@ module.exports = {
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
         // light mode
+        keyframes: {
+          blur: {
+            '0%': { filter: "blur(0px)" },
+            '100%': { filter: "blur(5px)" },
+          }
+        },
+        animation: {
+          blur: 'blur 0.4s linear both',
+        },
         tremor: {
           brand: {
             faint: "#eff6ff", // blue-50

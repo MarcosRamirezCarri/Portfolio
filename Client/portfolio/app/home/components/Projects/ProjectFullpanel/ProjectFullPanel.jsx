@@ -68,7 +68,7 @@ useEffect(() => {
                   <Image width={580} 
                 height={400} 
                 onClick={() =>openModal(images[currentIndex])} 
-                className="rounded -z-2  object-cover max-w-[90%] ring-2 lg:m-2 h-38 lg:w-[100%]" 
+                className="rounded -z-2  object-cover max-w-[90%] ring-2 lg:m-2 lg:w-[100%]" 
                 src={images[currentIndex]} alt="ProyectImg"/>
                   </CSSTransition>
                 </SwitchTransition>
@@ -90,7 +90,7 @@ useEffect(() => {
              </div>
             </div>    
             <div className="p-2 lg:p-3 rounded row-span-1  col-span-3 bg-blue-200 shadow-lg shadow-blue-500">
-              <div className="flex flex-row place-content-center overflow-visible gap-2 m-3">
+              <div className="flex flex-row place-content-center overflow-visible gap-2 m-1">
               
               <div className={styleModal.flipX}>
               <div className={styleModal.animate}>
