@@ -2,26 +2,16 @@
 import Link from "next/link"
 import Image from "next/image";
 import './styleBlob.css'
-import { useState, useEffect } from "react";
-import yoSinFondo from '../DatosPortfolio/images/yo/yoNoFondo.png'
-import IconoMio from '../DatosPortfolio/images/yo/logo_large.png'
+import { useState } from "react";
+import yoSinFondo from '../DatosPortfolio/images/yo/yoNoFondo.png';
+import Atropos from "atropos/react";
+import IconoMio from '../DatosPortfolio/images/yo/logo_large.png';
 import { BiCaretRightCircle } from "react-icons/bi";
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
- const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-    setMousePosition({ x: 0, y: 0 });
-  };
-
-  const handleMouseMove = (e) => {
-    setIsHovered(true);
-    setMousePosition({ x: e.clientX, y: e.clientY });
-  };
   const handleClick = () => {
     setExpanded(true);
   }
@@ -32,18 +22,13 @@ export default function Home() {
       <div className="absolute -z-5  w-[70vw] h-[100vh] right-[50vw] top-[0vh] skew-x-[-10deg] bg-gradient-to-r from-blue-400 to-blue-600 shadow-xl shadow-blue-600 ring-1 ring-blue-200"></div>
       <div className="absolute -z-5  w-[70vw] h-[100vh] left-[60vw] top-[0vh] skew-x-[-10deg] bg-gradient-to-l from-blue-400 to-blue-600 shadow-xl shadow-blue-600 ring-1 ring-blue-200 invisible lg:visible"></div>
       <div className="animate">
-
-     
       <div className={` ${expanded ? 'expanded' : 'circle'}`}>
-        
-        <div   
-      onMouseLeave={handleMouseLeave}
-      onMouseMove={handleMouseMove} 
-        style={{   transform: isHovered ? ` translateX(${mousePosition.y / 200}px) translateY(${mousePosition.x / 200}px)` : 'none'}} 
+        <div
+  
         className={`absolute invisible lg:visible h-fit w-fit origin-center right-0 transition-all ${expanded ? 'hidden' : 'content'} `} >
-        <Image width={420} height={420} 
-        src={yoSinFondo}
-        className=' h-80 w-80 rounded-full transition-all duration-300 scale-90 blur-[0.5px] grayscale hover:grayscale-0 hover:scale-100 hover:blur-none' alt="IconMe"/>
+        <Atropos className='bg-blue-300 rounded-full'>
+        <Image width={420} height={420} data-atropos-offset="-5"  priority={true}  src={yoSinFondo} className=' h-80 w-80 rounded-full transition-all duration-300 scale-90 blur-[0.5px] grayscale hover:grayscale-0 hover:scale-100 hover:blur-none' alt="IconMe"/>
+        </Atropos>
         </div>
         
         
@@ -68,7 +53,7 @@ export default function Home() {
           <h2  className="text-md lg:text-3xl text-blue-600 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] underline underline-offset-1 decoration-1 lg:decoration-2 font-normal">Marcos Ramirez </h2>
           </div>
           <div className="gap-1 text-center lg:left-0  relative flex flex-row">
-          <h2  className="text-md lg:text-3xl text-slate-800 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal">Y soy un desarrollador  </h2>
+          <h2  className="text-md lg:text-3xl text-slate-800 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] font-normal">Un desarrollador  </h2>
           <h2  className="text-md lg:text-3xl text-blue-600 font-medium [text-shadow:_2px_4px_8px_rgb(13_10_20_/_40%)] underline underline-offset-1 decoration-1 font-normal"> Full Stack</h2>
           </div>
          

@@ -1,6 +1,5 @@
 .circle {
   background: #a5b4fc;
-
   border-radius: 20px;
   width: 80vw;
   height: 65vh;
@@ -10,13 +9,8 @@
   justify-content: center;
   place-content: center;
   text-align: center;
-
 animation: blur-in 1s linear both 
 }
-
-
-
-
 .animate {
   max-width: fit-content;
   max-height: fit-content;
