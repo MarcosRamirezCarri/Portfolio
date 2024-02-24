@@ -13,12 +13,10 @@ return(
             <p className="font-sans text-slate-900 font-medium text-xl">Sobre mí</p>
             <p className='font-sans text-slate-900 font-medium text-md relative top-[5vh]'>Algo de información para que me puedas conocer mejor</p>
             <Image className='absolute place-self-center top-12 opacity-25 z-2 h-36 w-36' src={meImage} alt="yo"/>
-            <div className="shadow-md p-2 bg-blue-300 relative top-[18vh] lg:top-[17vh] ring-1 rounded-[10px] ring-slate-600">
-            <div className="bg-slate-200 rounded-[10px] flex flex-col gap-5 p-2">
+            <div className="shadow-md z-10 p-3 absolute bg-blue-300 self-center relative top-[15vh] lg:top-[14vh] ring-1 h-[17.5rem] rounded-[10px] ring-slate-600">
+            <div className="bg-slate-200 rounded-[10px] flex flex-col gap-[4.7rem]  content-around p-2">
               <p className="text-xl text-center font-medium text-slate-600" >Mi historia?</p>
-            <p className="text-xl text-center font-medium text-slate-600" >Mis Motivaciones?</p>
-            <p className="text-xl text-center font-medium text-slate-600" >Mi Metodologia para el trabajo?</p>
-            <p className="text-xl text-center font-medium text-slate-600" >Mis ideas?</p>
+            <p className="text-xl text-center font-medium text-slate-600" >Mi Metodologia?</p>
             <p className="text-xl text-center font-medium text-slate-600" >Que me apasiona?</p></div>
             
             </div>

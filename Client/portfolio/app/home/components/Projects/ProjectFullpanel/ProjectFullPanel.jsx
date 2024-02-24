@@ -2,29 +2,20 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import styleModal from './ModalImg.module.css';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
-import { SwitchTransition, CSSTransition } from 'react-transition-group';
-import { BiChevronsLeft, BiChevronsRight } from 'react-icons/bi';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, EffectCoverflow, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export default function ProjectsPanel ({name,  images, description, icon, link, Implementations, techs}) {
     const [isMobile, setIsMobile] = useState(false)
     const [modalImageUrl, setModalImageUrl] = useState('')
-    const [currentIndex, setCurrrentIndex] = useState(0)
-    const [interval, setIntervalo] = useState(null);
+    
 
 
-    const objetosAleatorios = () => {
-      const indiceAleatorio = Math.floor(Math.random() * images.length);
-      setCurrrentIndex(indiceAleatorio)
-  }
-
-useEffect(() => {
-    const nuevoIntervalo = setInterval(() => {
-        objetosAleatorios();
-    }, 15000);
-    setIntervalo(nuevoIntervalo);
-
-    return () => clearInterval(interval);
-}, []);
+   
 
 
     useEffect(() => {
@@ -45,49 +36,37 @@ useEffect(() => {
       const closeModal = () => {
         setModalImageUrl('')
       };
-    const prevImg = () =>{
-        const isFirst = currentIndex === 0;
-        const newIndex = isFirst ? images.length - 1 : currentIndex - 1; 
-        setCurrrentIndex(newIndex)
-    };
-    const nextImg = () =>{
-        const isLast = currentIndex === images.length - 1;
-        const newIndex = isLast ? 0 : currentIndex + 1;
-        setCurrrentIndex(newIndex)
-    };
     return(
             <div className="relative grid grid-cols-3 gap-4 h-[85vh] grid-rows-2">
             <div className="col-span-3 rounded row-span-1 flex flex-row place-content-center [box-shadow:_15px_39px_131px_-55px_rgba(48,36,171,0.75)] shadow-blue-500 p-6 bg-blue-200" >
-                <button className="right-0 top-1/2 relative max-h-[10vh]" onClick={prevImg}><BiChevronsLeft className="h-8 w-8 hover:scale-125 duration-300 drop-shadow-lg text-blue-700"/></button>
-                <SwitchTransition>
-                  <CSSTransition
-                  classNames='fade2'
-                  addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
-                  key={images[currentIndex]}
-                  >
-                  <Image width={580} 
-                height={400} 
-                onClick={() =>openModal(images[currentIndex])} 
-                className="rounded -z-2  object-cover max-w-[90%] ring-2 lg:m-2 lg:w-[100%]" 
-                src={images[currentIndex]} alt="ProyectImg"/>
-                  </CSSTransition>
-                </SwitchTransition>
-             <button className="left-0 top-1/2 relative max-h-[10vh]" onClick={nextImg}><BiChevronsRight className="h-8 w-8 hover:scale-125 duration-300 drop-shadow-lg text-blue-700"/></button>
-             <div className="absolute top-[47%] lg:top-[45%] gap-2 flex flex-row">
-             {images.map((s, i) => {
-          return (
-            <div
-              onClick={() => {
-                setCurrrentIndex(i);
-              }}
-              key={"circle" + i}
-              className={`rounded-full w-3 h-3 lg:w-4 lg:h-4 cursor-pointer transition-all delay-150  ${
-                i == currentIndex ? "bg-blue-500" : "bg-slate-500"
-              }`}
-            ></div>
-          );
-        })}
-             </div>
+              
+            <Swiper
+            effect={"coverflow"}
+     spaceBetween={30}
+     centeredSlides={true}
+     autoplay={{
+       delay: 10000,
+       disableOnInteraction: true,
+     }}
+     coverflowEffect={{
+      rotate: 90,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    }}
+    pagination={true}
+     modules={[Autoplay, Navigation, EffectCoverflow]}
+   className='w-44 h-64'
+   >
+{images.map((img, index) => 
+<SwiperSlide key={index}>
+  <Image width={850} height={650} src={img}/>
+  
+</SwiperSlide>)}
+
+   </Swiper> 
+         
             </div>    
             <div className="p-2 lg:p-3 rounded row-span-1  col-span-3 bg-blue-200 shadow-lg shadow-blue-500">
               <div className="flex flex-row place-content-center overflow-visible gap-2 m-1">
