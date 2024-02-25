@@ -41,27 +41,21 @@ export default function ProjectsPanel ({name,  images, description, icon, link, 
             <div className="col-span-3 rounded row-span-1 flex flex-row place-content-center [box-shadow:_15px_39px_131px_-55px_rgba(48,36,171,0.75)] shadow-blue-500 p-6 bg-blue-200" >
               
             <Swiper
-            effect={"coverflow"}
+            effect={"slide"}
      spaceBetween={30}
      centeredSlides={true}
+     navigation={true}
+     pagination={true}
      autoplay={{
-       delay: 10000,
+       delay: 5000,
        disableOnInteraction: true,
      }}
-     coverflowEffect={{
-      rotate: 90,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: false,
-    }}
-    pagination={true}
-     modules={[Autoplay, Navigation, EffectCoverflow]}
-   className='w-44 h-64'
+     modules={[Autoplay, Navigation, EffectCoverflow, Pagination]}
+     className="rounded p-5"
    >
 {images.map((img, index) => 
 <SwiperSlide key={index}>
-  <Image width={850} height={650} src={img}/>
+  <Image width={1150} height={850} onClick={()=>openModal(img)} className='h-[100%] w-[100%] px-10 rounded' src={img}/>
   
 </SwiperSlide>)}
 
