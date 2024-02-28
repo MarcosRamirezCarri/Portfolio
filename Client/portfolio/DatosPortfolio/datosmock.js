@@ -1,3 +1,19 @@
+const JsImage = require('./images/logosTech/JS.svg.png')
+const HTMlImg = require('./images/logosTech/HTML.png')
+const CSSimg = require('./images/logosTech/CSS.png')
+const ReactImg = require('./images/logosTech/react.png')
+const NextImg = require('./images/logosTech/Next.png')
+const CloudGog = require('./images/logosTech/googleCloud.png')
+const expressImg = require('./images/logosTech/express.png')
+const nodeJSImg = require('./images/logosTech/Node.png')
+const postgreImg = require('./images/logosTech/postgre.png')
+const reduxImg = require('./images/logosTech/redux.png')
+const tailwindImg = require('./images/logosTech/tailwind.png')
+const sequelizeImg = require('./images/logosTech/download.png')
+const tremorImg = require('./images/logosTech/tremor.png')
+const axiosImg = require('./images/logosTech/axios.png')
+const TypescriptImg = require('./images/logosTech/Typescript.png')
+
 const datosProyectos = [
     {
         id: 1,
@@ -17,7 +33,50 @@ const datosProyectos = [
             "https://res.cloudinary.com/dt2o36ezn/image/upload/v1694119471/Portfolio/el%20festin/ph7_w9t4v8.webp",
             "https://res.cloudinary.com/dt2o36ezn/image/upload/v1694119695/Portfolio/el%20festin/ph8_w4lmuk.webp"
           ],
-        miRol:'mi rol explicado'
+          techs:[
+            {
+                id: 1,
+                name:'JavaScript',
+                type:'Lenguaje',
+                image: JsImage
+            },
+            {
+                id: 2,
+                name: 'React JS',
+                type: 'Framework',
+                image: ReactImg
+            },
+            {
+                id:3,
+                name:'Node',
+                type:'Entorno',
+                image: nodeJSImg
+            },
+            {
+                id: 4,
+                name: 'Express JS',
+                type:'Framework',
+                image: expressImg
+            },
+            {
+                id: 5,
+                name:'CSS',
+                type: 'Lenguaje',
+                image: CSSimg
+            },
+            {
+                id: 6,
+                name:'Google Cloud',
+                type:'Libreria',
+                image: CloudGog
+            },
+            {
+                id:7,
+                name: 'Tremor',
+                type: 'Librería',
+                image: tremorImg
+            },
+        ]
     },
     {
         id: 2,
@@ -34,7 +93,46 @@ const datosProyectos = [
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586633/perritos6_cmvuc1.png",
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586629/perritos2_alfdyw.png",
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586629/perritos3_jjqkva.png"
+        ],
+        techs:[
+            {
+                id: 1,
+                name:'JavaScript',
+                type:'Lenguaje',
+                image: JsImage
+            },
+            {
+                id: 2,
+                name: 'React JS',
+                type: 'Framework',
+                image: ReactImg
+            },
+            {
+                id:3,
+                name:'Node',
+                type:'Entorno',
+                image: nodeJSImg
+            },
+            {
+                id: 4,
+                name: 'Express JS',
+                type:'Framework',
+                image: expressImg
+            },
+            {
+                id: 5,
+                name:'CSS',
+                type: 'Lenguaje',
+                image: CSSimg
+            },
+            {
+                id:6,
+                name: 'Axios',
+                type: 'Librería',
+                image: axiosImg
+            },
         ]
+        
     },
     {
         id: 3,
@@ -53,6 +151,44 @@ const datosProyectos = [
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586630/rickandmorty6_vg7npx.png",
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586630/rickandmorty7_iql0jc.png",
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586632/rickandmorty8_am1v99.png",
+        ],
+        techs:[
+            {
+                id: 1,
+                name:'JavaScript',
+                type:'Lenguaje',
+                image: JsImage
+            },
+            {
+                id: 2,
+                name: 'React JS',
+                type: 'Framework',
+                image: ReactImg
+            },
+            {
+                id:3,
+                name:'Node',
+                type:'Entorno',
+                image: nodeJSImg
+            },
+            {
+                id: 4,
+                name: 'Express JS',
+                type:'Framework',
+                image: expressImg
+            },
+            {
+                id: 5,
+                name:'CSS',
+                type: 'Lenguaje',
+                image: CSSimg
+            },
+            {
+                id:6,
+                name: 'Axios',
+                type: 'Librería',
+                image: axiosImg
+            },
         ]
     }
 ]

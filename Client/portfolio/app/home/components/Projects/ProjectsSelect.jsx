@@ -49,6 +49,7 @@ export default function ProjectsSelect () {
     description={a.description}
     Implementations={a.Implementations}
     shortDescript={a.shortDescript}
+    techs={a.techs}
     icon={a.icon}
     link={a.link}
     />

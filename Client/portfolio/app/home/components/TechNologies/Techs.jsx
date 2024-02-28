@@ -1,14 +1,13 @@
 import LittleCardtech from "./techCard/littleCard"
-import style from './Techn.module.css'
 import { techs } from "../../../../DatosPortfolio/tecnologiasMock"
 
 export default function Techs () {
     const Tec = [...techs]
+  
    
-    
-    
+   
     return (
-        <div className={style.contAnimation}>
+        <div>
         <div className="bg-transparent flex flex-col select-none justify-center relative left-[1vw] lg:left-[15%] top-8 lg:top-8 h-[90vh] max-w-5xl">
         <div className="bg-blue-200 relative left-2 max-w-fit shadow-inner  rounded-tl-md rounded-tr-md">
         <h1 className="text-xl mt-2 mr-2 ml-2 drop-shadow-xl font-sans font-semibold ">Mis Tecnologías</h1>

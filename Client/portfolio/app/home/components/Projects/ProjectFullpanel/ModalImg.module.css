@@ -7,6 +7,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 999;
+    animation: blur-in 0.3s linear both;
   }
   
   .modalContent {
@@ -72,8 +73,16 @@
       animation: expand 3s linear infinite;
   
   }
+
   
-  
+  @keyframes blur-in{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
   
   @keyframes expand {
     0% {

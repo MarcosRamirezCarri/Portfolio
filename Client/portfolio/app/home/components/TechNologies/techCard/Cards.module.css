@@ -5,17 +5,12 @@
     min-width:  8.25rem;
     border-radius: 20px;
     z-index: 8;
-    
 }
-
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
   }
-
-  
-  
   .animate {
     max-width: fit-content;
     max-height: fit-content;
@@ -24,17 +19,13 @@
     background-image: linear-gradient(
       var(--rotate)
       ,#020617, #4338ca, #818cf8);
-      animation: spin 2.5s linear infinite,
-      blur-in 0.4s linear both} 
 
+    animation: spin 2.5s linear infinite,
+      blur-in 0.4s linear both,
+    } 
 @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
   
-
-
-
-
-
-  @keyframes spin {
+@keyframes spin {
     0% {
       --rotate: 0deg;
     }
