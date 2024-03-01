@@ -22,7 +22,7 @@ export default function HomeCardMe({ currentPage, setState }) {
           alt="yo"
         />
         <div className="shadow-md z-10 p-3 absolute bg-blue-300 self-center relative top-[15vh] lg:top-[14vh] ring-1 h-[17.5rem] rounded-[10px] ring-slate-600">
-          <div className="bg-slate-200 rounded-[10px] flex flex-col gap-[4.7rem]  content-around p-2">
+          <div className="bg-slate-200 rounded-[10px] flex flex-col gap-[4rem] lg:gap-[4.7rem]  content-around p-2">
             <p className="text-xl text-center font-medium text-slate-600">
               Mi historia?
             </p>

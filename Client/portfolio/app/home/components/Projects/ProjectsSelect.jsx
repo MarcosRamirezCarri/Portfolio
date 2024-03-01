@@ -16,7 +16,7 @@ export default function ProjectsSelect() {
   };
 
   return (
-    <div className="w-[95vw] lg:w-[65vw] h-[90vh] relative lg:left-[8vw] m-2 lg:m-5 items-center top-2 lg:top-0">
+    <div className="w-[95vw] lg:w-[65vw] h-[90vh] relative lg:left-[8vw] items-center m-3 lg:top-0">
       <div className="w-fit relative place-content-end rounded-t lg:place-content-center bg-blue-200 flex py-3 gap-3 lg:gap-5 mx-auto px-3">
         {projectsName.map((a) => {
           return (

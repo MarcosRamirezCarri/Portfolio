@@ -1,8 +1,10 @@
 "use client";
-import instragram from "../../../DatosPortfolio/images/logosTech/LogoInstagram.png";
-import github from "../../../DatosPortfolio/images/logosTech/github.png";
-import Linkedin from "../../../DatosPortfolio/images/logosTech/Linkedin.png";
-import calendly from "../../../DatosPortfolio/images/logosTech/Calendly.png";
+import instragram from "../../../../DatosPortfolio/images/logosTech/LogoInstagram.png";
+import github from "../../../../DatosPortfolio/images/logosTech/github.png";
+import Linkedin from "../../../../DatosPortfolio/images/logosTech/Linkedin.png";
+import calendly from "../../../../DatosPortfolio/images/logosTech/Calendly.png";
+import { SlArrowRightCircle } from "react-icons/sl";
+import style from './Navigation.module.css'
 import Image from "next/image";
 import { useState } from "react";
 import { BiArrowToLeft } from "react-icons/bi";
@@ -12,18 +14,9 @@ export default function Navigation({ handleChange, state, setState }) {
   return (
     <div className="flex absolute flex-col justify-center">
       {showSidebar === false ? (
-        <svg
-          onClick={() => setShowSidebar(!showSidebar)}
-          className="fixed ease-in-out duration-300 z-30 flex items-center lg:hidden xl:hidden cursor-pointer left-6 top-6"
-          fill="#3730a3"
-          viewBox="0 0 100 80"
-          width="40"
-          height="40"
-        >
-          <rect width="70" height="10"></rect>
-          <rect y="30" width="70" height="10"></rect>
-          <rect y="60" width="70" height="10"></rect>
-        </svg>
+        
+ <button onClick={() => setShowSidebar(!showSidebar)}  className="fixed text-4xl font-normal text-blue-900 z-[999] items-center lg:hidden xl:hidden cursor-pointer left-6 top-6"><SlArrowRightCircle className={style.animate2}/></button>
+  
       ) : null}
       <div
         className={`top-0 w-[50vw] lg:w-[25vw] left-0 lg:left-9 bg-transparent text-white fixed h-full p-2 ease-in-out duration-300 z-40  ${

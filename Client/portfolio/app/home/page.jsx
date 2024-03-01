@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation/Navigation";
 import HomePrin from "./components/Home";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 

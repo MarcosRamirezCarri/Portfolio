@@ -11,11 +11,9 @@ export default function Techs() {
           <h1 className="text-xl mt-2 mr-2 ml-2 drop-shadow-xl font-sans font-semibold ">
             Mis Tecnologías
           </h1>
-      
-
+          </div>
         <div className="shadow-lg bg-blue-200 rounded-md overflow-y-auto snap snap-mandatory scroll-py-1.5 snap-y p-5 scroll-smooth touch-auto  grid grid-cols-2 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5">
-          {Tec &&
-            Tec.map((tec, index) => (
+          {Tec && Tec.map((tec, index) => (
               <div
                 key={index}
                 className="snap-always snap-center justify-center"
@@ -30,7 +28,7 @@ export default function Techs() {
               </div>
             ))}
         </div>
-      </div>
+     
     </div>
   );
 }

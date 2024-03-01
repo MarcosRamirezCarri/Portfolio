@@ -23,14 +23,15 @@ export default function HomeCardTechs({ currentPage, setState }) {
         <p className="font-sans text-slate-900 text-center z-5 font-semibold text-xl">
           Mi Stack
         </p>
+       
+        <p className="font-sans text-slate-900 text-center font-medium text-md relative top-[5vh]">
+          Tecnologías Web las cuales he estudiado durante mi vida
+        </p>
         <Image
           className="absolute place-self-center top-12 opacity-25 z-2 h-36 w-36"
           src={techImg}
           alt="tech"
         />
-        <p className="font-sans text-slate-900 text-center font-medium text-md relative top-[5vh]">
-          Tecnologías Web las cuales he estudiado durante mi vida
-        </p>
         <div className="shadow-md z-10 p-3 max-w-min absolute bg-blue-300 self-center relative top-[15vh] lg:top-[14vh] ring-1 rounded-[10px] ring-slate-600">
           <Swiper
             spaceBetween={30}

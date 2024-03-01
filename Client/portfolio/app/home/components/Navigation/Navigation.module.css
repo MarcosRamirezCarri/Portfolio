@@ -1,0 +1,17 @@
+.animate2{
+ 
+ 
+
+    animation: l9 1.5s infinite linear alternate;
+}
+@keyframes l9 {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(12px);
+    }
+  }

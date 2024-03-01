@@ -20,7 +20,7 @@ const datosProyectos = [
         name: 'El Festin',
         shortDescript: 'E-commerce',
         link:'https://pf-front-end-grupo3.vercel.app/',
-        description:'Aplicación completa y atractiva desarrollada para el restaurante "El Festín", pero con la flexibilidad de adaptarse sin esfuerzo a cualquier otro establecimiento de gastronomía. Todo esto con tecnologias de punta como Node, Express, React, Mercado Pago.',
+        description:'Aplicación completa y atractiva desarrollada para el restaurante "El Festín", pero con la flexibilidad de adaptarse sin esfuerzo a cualquier otro establecimiento de gastronomía.',
         Implementations:'Carrito de Compras Integrado, personalización de órdenes, selector de comidas con múltiples filtros, pagos seguros integrados, opiniones y ranking por platos, sistema de cuentas, panel de administración',
         icon:'https://res.cloudinary.com/dljgbq48k/image/upload/v1698162445/elFestinIcon_ypladg.jpg',
          images:[
@@ -83,8 +83,8 @@ const datosProyectos = [
         name: 'Henry PI Dogs',
         shortDescript: 'Data',
         link:'https://github.com/MarcosRamirezCarri/ProyectoIndividualDOGS',
-        description:'Proyecto con temática de perros. Esta enfocado para que el usuario tenga una experiencia cómoda en todo aspecto y que se sienta realmente comunicado con la aplicación. Todo esto utilizando tecnologías como React, Node, Express, CSS, Redux.',
-        Implementations:'Obtencion de datos mediante apis externas, interactividad con el usuario, creación de perros los cuales persisten, navegación fluida y organizada, integracion de ORM, manejo correcto de errores, diferentes filtros para busquedas.',
+        description:'Proyecto con temática de perros. Esta enfocado para que el usuario tenga una experiencia cómoda en todo aspecto y que se sienta realmente comunicado con la aplicación.',
+        Implementations:'Interactividad con el usuario, creación de perros los cuales persisten, navegación fluida y organizada, integracion de ORM, manejo correcto de errores, diferentes filtros para busquedas.',
         icon:'https://res.cloudinary.com/dljgbq48k/image/upload/v1698606077/dog_rsfcjq.png',
         images:[
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586631/perritos1_pc3gww.png",
@@ -139,8 +139,8 @@ const datosProyectos = [
         name: 'Rick and Morty',
         shortDescript: 'Data',
         link:'https://github.com/MarcosRamirezCarri/RickAndMortyApp',
-        description:'Proyecto integrador que he realizado durante los 4 módulos del Bootcamp en Henry, una aplicación sencilla, facil de usar e inspirada en la serie "Rick and Morty". Todo esto utilizando tecnologías como React, Node, Express, CSS, Redux.',
-        Implementations:'Obtencion de datos mediante apis externas, manejo correcto de errores con comunicación al Front, Sistema de cuentas, sistema de favoritos en relacion a la cuenta, integración de ORM, filtros para favoritos.',
+        description:'Proyecto integrador que he realizado durante los 4 módulos del Bootcamp en Henry, una aplicación sencilla, facil de usar e inspirada en la serie "Rick and Morty".',
+        Implementations:'Manejo correcto de errores con comunicación al Front, Sistema de cuentas, sistema de favoritos en relacion a la cuenta, integración de ORM, filtros para favoritos.',
         icon:'https://res.cloudinary.com/dljgbq48k/image/upload/v1698605908/rick_sirtkb.png',
         images:[
             "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586632/rickandmorty3_geob1i.png",

@@ -46,7 +46,7 @@ export default function ProjectsPanel({
     setModalImageUrl("");
   };
   return (
-    <div className="relative grid grid-cols-3 gap-4 h-[85vh] grid-rows-2">
+    <div className="relative grid grid-cols-3 gap-4 h-[88vh] grid-rows-2">
       <div className="col-span-3 rounded row-span-1 flex flex-row place-content-center [box-shadow:_15px_39px_131px_-55px_rgba(48,36,171,0.75)] shadow-blue-500 p-6 bg-blue-200">
         <Swiper
           effect={"slide"}
@@ -55,11 +55,11 @@ export default function ProjectsPanel({
           navigation={true}
           pagination={true}
           autoplay={{
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: true,
           }}
           modules={[Autoplay, Navigation, EffectCoverflow, Pagination]}
-          className="rounded p-5"
+          className=" h-[100%] w-[100%] rounded p-5"
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
@@ -75,23 +75,21 @@ export default function ProjectsPanel({
         </Swiper>
       </div>
 
-      <div className="p-2 lg:p-3 rounded grid grid-cols-2 row-span-1  col-span-3 bg-blue-200 shadow-lg shadow-blue-500 gap-3">
-        <div>
+      <div className="p-2 lg:p-3 rounded grid grid-cols-2 lg:grid-cols-3 row-span-1  col-span-3 bg-blue-200 shadow-lg shadow-blue-500 gap-3">
+        <div className="col-span-2 flex flex-col gap-2" >
           <div className="flex flex-row place-content-center overflow-visible gap-5 m-1">
             <div className={styleModal.flipX}>
-              <div className={styleModal.animate}>
                 <a href={link} target="_blank">
                   <Image
                     width={280}
                     height={200}
                     src={icon}
-                    className="h-10 w-10 z-80 lg:h-20 lg:w-20 rounded-full bg-blue-50 ring-2"
+                    className="h-10 w-10 z-80 lg:h-20 lg:w-20 rounded-full bg-blue-50 ring-8"
                     alt="iconProyect"
                   />
                 </a>
-              </div>
             </div>
-            <h1 className="place-self-center text-slate-950 w-fit h-fit overflow-visible truncate text-lg lg:text-2xl font-bold [text-shadow:_1px_1px_1px_rgb(13_10_20_/_40%)]">
+            <h1 className="text-slate-700 self-center text-center font-medium text-lg lg:text-2xl [text-shadow:_4px_5px_10px_rgb(13_10_20_/_40%)]">
               ¿Qué es {name}?
             </h1>
           </div>
@@ -100,8 +98,20 @@ export default function ProjectsPanel({
               - {description}
             </p>
           </div>
+          <div className="shadow-inner flex flex-col p-2 bg-blue-300 rounded-[10px] gap-5">
+            <p className="text-sm lg:text-md text-slate-900 text-left font-sans font-normal">
+              - Implementaciones: {Implementations}
+            </p>
+          </div>
+          <h1 className="text-slate-700 transition-colors self-center text-center duration-150 underline visible lg:invisible decoration-blue-200 hover:decoration-slate-700  text-center text-md lg:text-lg [text-shadow:_2px_1px_10px_rgb(13_10_20_/_40%)]">
+          <a href={link} target="_blank">  Ir al sitio </a>
+            </h1>
         </div>
-        <div>
+        <div className="flex flex-col justify-center gap-2 py-2 invisible lg:visible">
+       
+        <h1 className="text-slate-700  text-center text-md lg:text-lg [text-shadow:_2px_1px_10px_rgb(13_10_20_/_40%)]">
+         Tecnologias Utilizadas 
+            </h1>
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -117,6 +127,7 @@ export default function ProjectsPanel({
               slideShadows: false,
             }}
             modules={[Autoplay, Navigation]}
+            className=" w-32 h-48"
           >
             {techs.map((obj, index) => (
               <SwiperSlide key={index}>
@@ -128,11 +139,11 @@ export default function ProjectsPanel({
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="shadow-inner flex flex-col p-2 bg-blue-300 rounded-[10px] gap-5">
-            <p className="text-sm lg:text-md text-slate-900 text-left font-sans font-normal">
-              - Implementaciones: {Implementations}
-            </p>
-          </div>
+          
+          <h1 className="text-slate-700 transition-colors duration-150 underline decoration-blue-200 hover:decoration-slate-700  text-center text-md lg:text-lg [text-shadow:_2px_1px_10px_rgb(13_10_20_/_40%)]">
+          <a href={link} target="_blank">  Ir al sitio </a>
+            </h1>
+            
         </div>
       </div>
       {modalImageUrl !== "" && (
