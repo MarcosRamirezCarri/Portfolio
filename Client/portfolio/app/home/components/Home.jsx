@@ -5,7 +5,7 @@ import WelcomeHome from "./homeWelcome/WelcomeComp";
 
 export default function HomePrin ({state, setState}) {
     return(
-        <div className="mt-3">
+        <div className="mt-3 lg:mt-0">
        {state === 'Projects' ?  <ProjectsSelect/> : null}
        {state === 'About'? <About1/> : null }
        {state === 'Tech' ? <Techs/> : null}

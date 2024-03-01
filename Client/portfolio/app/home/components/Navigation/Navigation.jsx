@@ -1,5 +1,4 @@
 "use client";
-import instragram from "../../../../DatosPortfolio/images/logosTech/LogoInstagram.png";
 import github from "../../../../DatosPortfolio/images/logosTech/github.png";
 import Linkedin from "../../../../DatosPortfolio/images/logosTech/Linkedin.png";
 import calendly from "../../../../DatosPortfolio/images/logosTech/Calendly.png";
@@ -110,13 +109,6 @@ export default function Navigation({ handleChange, state, setState }) {
             <Image
               className="place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300"
               src={github}
-              alt="LinkTo"
-            />
-          </a>
-          <a href="https://www.instagram.com/marcos_rc49/" target="_blank">
-            <Image
-              className="place-self-center z-2 h-8 w-8 lg:h-10 lg:w-10 hover:scale-105 hover:-translate-y-1.5 ease-in-out duration-300"
-              src={instragram}
               alt="LinkTo"
             />
           </a>

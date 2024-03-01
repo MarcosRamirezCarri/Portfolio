@@ -4,7 +4,6 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
-import "./animations/style.css";
 import techImg from "../../../../../DatosPortfolio/images/logosTech/tech.png";
 import { techs } from "../../../../../DatosPortfolio/tecnologiasMock";
 import Card from "../../TechNologies/techCard/Card";

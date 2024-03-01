@@ -136,21 +136,18 @@ const datosProyectos = [
     },
     {
         id: 3,
-        name: 'Rick and Morty',
-        shortDescript: 'Data',
-        link:'https://github.com/MarcosRamirezCarri/RickAndMortyApp',
-        description:'Proyecto integrador que he realizado durante los 4 módulos del Bootcamp en Henry, una aplicación sencilla, facil de usar e inspirada en la serie "Rick and Morty".',
-        Implementations:'Manejo correcto de errores con comunicación al Front, Sistema de cuentas, sistema de favoritos en relacion a la cuenta, integración de ORM, filtros para favoritos.',
-        icon:'https://res.cloudinary.com/dljgbq48k/image/upload/v1698605908/rick_sirtkb.png',
+        name: 'Copywriter Portfolio ',
+        shortDescript: 'Portfolio',
+        link:'https://lauraramirezportfolio.vercel.app/',
+        description:'Un trabajo realizado para Laura Ramirez Carrivali, Copywriter y Profesora de letras. Es aplicación sencilla, facil de usar, con colores cálidos, con una interfaz totalmente interactiva y atractiva a la vez. ',
+        Implementations:'Diseño totalmente responsive, utilización de Swiper-React, imagenes pre-cargadas con Cloudinary, manejo correcto del diseño, envio de e-mail automatizados.',
+        icon:'https://res.cloudinary.com/dljgbq48k/image/upload/v1709333363/WhatsApp_Image_2024-02-16_at_13.37.19_1_okgobv.jpg',
         images:[
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586632/rickandmorty3_geob1i.png",
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586633/rickandmorty1_kyu4os.png",
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586633/rickandmorty2_sb9rae.png",
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586631/rickandmorty4_bzumgf.png",
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586631/rickandmorty5_m12yqk.png",
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586630/rickandmorty6_vg7npx.png",
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586630/rickandmorty7_iql0jc.png",
-            "https://res.cloudinary.com/dljgbq48k/image/upload/v1704586632/rickandmorty8_am1v99.png",
+            "https://res.cloudinary.com/dljgbq48k/image/upload/v1709332584/WhatsApp_Image_2024-03-01_at_19.32.12_rahc7i.jpg",
+            "https://res.cloudinary.com/dljgbq48k/image/upload/v1709332583/WhatsApp_Image_2024-03-01_at_19.32.38_mjuxmc.jpg",
+            "https://res.cloudinary.com/dljgbq48k/image/upload/v1709332583/WhatsApp_Image_2024-03-01_at_19.33.20_zb3xto.jpg",
+            "https://res.cloudinary.com/dljgbq48k/image/upload/v1709332584/WhatsApp_Image_2024-03-01_at_19.33.48_p58osv.jpg",
+            "https://res.cloudinary.com/dljgbq48k/image/upload/v1709332583/WhatsApp_Image_2024-03-01_at_19.32.38_mjuxmc.jpg",
         ],
         techs:[
             {
@@ -161,33 +158,29 @@ const datosProyectos = [
             },
             {
                 id: 2,
-                name: 'React JS',
+                name: 'Next JS',
                 type: 'Framework',
-                image: ReactImg
+                image: NextImg
             },
             {
-                id:3,
-                name:'Node',
-                type:'Entorno',
-                image: nodeJSImg
-            },
-            {
-                id: 4,
-                name: 'Express JS',
-                type:'Framework',
-                image: expressImg
-            },
-            {
-                id: 5,
+                id: 3,
                 name:'CSS',
                 type: 'Lenguaje',
                 image: CSSimg
             },
             {
-                id:6,
-                name: 'Axios',
+                id: 4,
+                name: 'Tailwind',
                 type: 'Librería',
-                image: axiosImg
+                image: tailwindImg
+        
+            },
+            {
+                id: 5,
+                name:'HTML',
+                type:'Lenguaje',
+                image: HTMlImg
+        
             },
         ]
     }

@@ -69,6 +69,7 @@ export default function ProjectsPanel({
                 onClick={() => openModal(img)}
                 className="h-[100%] w-[100%] px-10 rounded"
                 src={img}
+                alt="PhImage"
               />
             </SwiperSlide>
           ))}
@@ -107,7 +108,7 @@ export default function ProjectsPanel({
           <a href={link} target="_blank">  Ir al sitio </a>
             </h1>
         </div>
-        <div className="flex flex-col justify-center gap-2 py-2 invisible lg:visible">
+        <div className="flex flex-col justify-center gap-2 pb-3 invisible lg:visible">
        
         <h1 className="text-slate-700  text-center text-md lg:text-lg [text-shadow:_2px_1px_10px_rgb(13_10_20_/_40%)]">
          Tecnologias Utilizadas 

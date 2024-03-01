@@ -16,9 +16,16 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen -z-10 select-none w-screen bg-gradient-to-r from-blue-500 to-blue-300 -z-5 place-content-center grid overflow-hidden">
-      <div className="absolute -z-5  w-[70vw] h-[100vh] right-[50vw] top-[0vh] skew-x-[-10deg] bg-gradient-to-r from-blue-400 to-blue-600 shadow-xl shadow-blue-600 ring-1 ring-blue-200"></div>
-      <div className="absolute -z-5  w-[70vw] h-[100vh] left-[60vw] top-[0vh] skew-x-[-10deg] bg-gradient-to-l from-blue-400 to-blue-600 shadow-xl shadow-blue-600 ring-1 ring-blue-200 invisible lg:visible"></div>
+    <div className="h-screen -z-10 select-none w-screen bg-blue-300 -z-5 place-content-center grid overflow-hidden">
+      <div className="absolute w-screen hidden lg:contents h-screen">
+        <div className='shapeBlob'></div>
+        <div className='shapeBlobOne'></div>
+        <div className='shapeBlobTwo'></div>
+        <div className='shapeBlobThree'></div>
+        <div className='shapeBlobFour'></div>
+        <div className='shapeBlobFive'></div>
+      </div>
+      <div className="absolute -z-5  w-[70vw] h-[100vh] right-[50vw] top-[0vh] skew-x-[-10deg] bg-gradient-to-r from-blue-400 to-blue-600 shadow-xl shadow-blue-600 ring-1 ring-blue-200 visible lg:invisible"></div>
       <div className="animate">
         <div className={` ${expanded ? "expanded" : "circle"}`}>
           <div

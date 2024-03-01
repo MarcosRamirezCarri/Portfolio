@@ -1,7 +1,7 @@
 .circle {
   background: #a5b4fc;
   border-radius: 20px;
-  width: 80vw;
+  width: 65vw;
   height: 65vh;
   display: flex;
   padding: 5rem;
@@ -24,6 +24,128 @@ animation: blur-in 1s linear both
     animation: expand 2s linear infinite;
 
 }
+.shapeBlob {
+	background: linear-gradient( #6366f1, #818cf8);
+	height: 24rem;
+	width: 24rem;
+	border-radius: 30% 50% 20% 40%;
+  	animation: 
+		transform 20s ease-in-out infinite both alternate,
+		movement_one 40s ease-in-out infinite both;
+	opacity:.7;
+	position: absolute;
+	left: 60%;
+	top: 50%;
+
+	
+}
+.shapeBlobOne{
+	background: linear-gradient( #6366f1, #818cf8);
+	height: 28rem;
+	width: 28rem;
+	left: -10%;
+	top: -15%;
+	opacity:.7;
+	position: absolute;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, movement_three 60s ease-in-out infinite both;
+
+}
+
+.shapeBlobTwo{
+	height: 26rem;
+	background: linear-gradient( #6366f1, #818cf8);
+	width: 26rem;
+	left: 50%;
+	top: -10%;
+	opacity:.7;
+	position: absolute;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, movement_four 60s ease-in-out infinite both;
+
+}
+
+.shapeBlobThree{
+	height: 24rem;
+	background: linear-gradient( #6366f1, #818cf8);
+	width: 24rem;
+	left: 5%;
+	top: 60%;
+	opacity:.7;
+	position: absolute;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, movement_four 60s ease-in-out infinite both;
+
+}
+.shapeBlobFour {
+	background: linear-gradient( #6366f1, #818cf8);
+	height: 18rem;
+	width: 18rem;
+	border-radius: 30% 50% 20% 40%;
+  	animation: 
+		transform 20s ease-in-out infinite both alternate,
+		movement_three 40s ease-in-out infinite both;
+	opacity:.7;
+	position: absolute;
+	left: 80%;
+	top: 20%;
+
+}
+.shapeBlobFive {
+	background: linear-gradient( #6366f1, #818cf8);
+	height: 18rem;
+	width: 18rem;
+	border-radius: 30% 50% 20% 40%;
+  	animation: 
+		transform 20s ease-in-out infinite both alternate,
+		movement_three 40s ease-in-out infinite both;
+	opacity:.7;
+	position: absolute;
+	left: 35%;
+	top: 40%;
+
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(40%, 20%) rotateY(10deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(20%, 50%) rotate(-200deg) scale(1.2);}
+}
+
+@keyframes movement_three
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(30%, 10%) rotate(200deg) scale(1.3);}
+}
+
+@keyframes movement_four
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(60%, 40%) rotate(100deg) scale(1.1);}
+}
+
+
 
 
 

@@ -1,4 +1,3 @@
-import "./animations/style.css";
 import LittleCardProject from "../../Projects/PojectLittleCard/LittleCardProject";
 import Image from "next/image";
 import { datosProyectos } from "../../../../../DatosPortfolio/datosmock";

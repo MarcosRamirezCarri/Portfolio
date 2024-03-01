@@ -1,6 +1,5 @@
 import Image from "next/image";
 import meImage from "../../../../../DatosPortfolio/images/yo/bowler.png";
-import "./animations/style.css";
 import React from "react";
 
 export default function HomeCardMe({ currentPage, setState }) {
