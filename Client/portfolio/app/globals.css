@@ -44,6 +44,8 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+
+
 .fade-enter{
   opacity: 0;
   transform: translateX(-100%);
@@ -148,4 +150,9 @@ body {
 .fade3-exit-active{
   transition: opacity 100ms;
   z-index: 2;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url('../public/fonts/Lato-Regular.ttf');
 }

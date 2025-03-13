@@ -1,3 +1,4 @@
+"use client"
 import { datosProyectos } from "../../../../DatosPortfolio/datosmock";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 import ProjectsPanel from "./ProjectFullpanel/ProjectFullPanel";

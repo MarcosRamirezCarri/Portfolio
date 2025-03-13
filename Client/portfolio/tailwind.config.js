@@ -46,6 +46,9 @@ module.exports = {
     current: "currentColor",
     
     extend: {
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
       colors: {
         transparent: 'transparent',
       current: 'currentColor',
@@ -83,6 +86,7 @@ module.exports = {
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
         // light mode
+    
         keyframes: {
           blur: {
             '0%': { filter: "blur(0px)" },

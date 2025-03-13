@@ -1,3 +1,4 @@
+"use client"
 import meImg1 from "../../../../DatosPortfolio/images/yo/me.png";
 import { useState } from "react";
 import Image from "next/image";
@@ -40,7 +41,7 @@ export default function About1() {
           <Image
             width={400}
             height={400}
-            className="ring-2 relative h-60 w-60 lg:h-80 lg:w-80 lg:w-auto lg:h-auto rounded-xl bg-transparent"
+            className="ring-2 relative h-60 w-60 lg:h-80  lg:w-auto lg:h-auto rounded-xl bg-transparent"
             src={ImgAleatorio}
             alt="no image"
           />
